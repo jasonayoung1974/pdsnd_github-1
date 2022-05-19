@@ -120,8 +120,8 @@ def time_stats(df):
 
     # TO DO: display the most common month
 
-    popular_month = df['month'].mode()[0]
-    print('Most Common Month:', popular_month)
+    popular_monthzz = df['month'].mode()[0]
+    print('Most Common Month:', popular_monthzz)
 
 
     # TO DO: display the most common day of week
@@ -209,8 +209,8 @@ def user_stats(df):
     # TO DO: Display counts of gender
 
     try:
-      gender_types = df['Gender'].value_counts()
-      print('\nGender Types:\n', gender_types)
+      gender_typez = df['Gender'].value_counts()
+      print('\nGender Types:\n', gender_typez)
     except KeyError:
       print("\nGender Types:\nNo data available for this month.")
 
