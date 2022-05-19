@@ -1,3 +1,5 @@
+#completed on 5/17 for udacity nanodegree
+
 import time
 import pandas as pd
 import numpy as np
@@ -99,7 +101,7 @@ def display_stats(df):
             print('Try again')
         else:
             break
-        
+
     start = 0
     pd.set_option('display.max_columns',None)
     while True:
@@ -108,8 +110,8 @@ def display_stats(df):
         print(df.iloc[start:start + 5])
         start += 5
         answer = input("Do you want to continue?").lower()
-        
-        
+
+
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -213,7 +215,7 @@ def user_stats(df):
       print("\nGender Types:\nNo data available for this month.")
 
     # TO DO: Display earliest, most recent, and most common year of birth
-    
+
     try:
       Earliest_Year = int(df['Birth Year'].min())
       print('\nEarliest Year:', Earliest_Year)
@@ -236,7 +238,7 @@ def user_stats(df):
     print('-'*40)
 
 
-        
+
 def main():
     while True:
         city, month, day = get_filters()
